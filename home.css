@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #339966;
+    border-radius: 50px;
+}
+/* styling the heading section */
+#head{
+    background-image: url("../images/theme2.jpg");
+    background-size: contain;
+    height: 40vh;
+    
+}
+
+#heading{
+    text-align: center;
+    background: -webkit-linear-gradient(90deg,#006600, #00cc99, #009999);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#heading h1{
+    font-size: 5rem;
+    padding-top: 30px;
+
+}
+
+/* styling the input form section */
+#tasks{
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 10rem;
+    background: linear-gradient(45deg,#006600, #00cc99, #009999);
+    position: relative;
+}
+
+#task-submission{
+    width: 60%;
+    margin: auto;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.label{
+    margin-bottom: 5px;
+}
+
+.col{
+    padding: 1px;
+}
+
+/* adding styles to add and delete buttons */
+#add-del-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+#add-task{
+    margin: 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid #00cc99;
+    border-radius: 50px 50px;
+    background-color: #009999;
+    color: #fff;
+    width: 200px;
+    transition-duration: 0.5s;
+}
+
+#add-task:hover{
+    box-shadow: 0 0 3px 3px #008066;
+    transform: scale(1.1);
+}
+
+
+
+#del-task{
+    margin: 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid #00cc99;
+    border-radius: 50px 50px;
+    background-color: #ff4d4d;
+    color: #111;
+    width: 200px;
+    transition-duration: 0.5s;
+}
+
+#del-task:hover{
+    box-shadow: 0 0 3px 3px #008066;
+    transform: scale(1.1);
+}
+
+/* styling filter task section */
+#filter-task{
+    width: 40%;
+    padding-bottom: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#select-category{
+    margin-bottom: 10px;
+}
+
+#filter-btn-container{
+    margin-top: 1.4rem;
+}
+
+#filter-btn{
+    padding: 0.5rem;
+    background-color: #66ffff;
+    border: 1px solid #00cc99;
+    border-radius: 5px;
+}
+
+/* styling task-list section */
+#task-list{
+    margin: auto;
+    width: 50%;
+    
+}
+
+.task-card{
+   display: flex;
+   height: 90px;
+   padding: 1rem;
+   color: seashell;
+   justify-content: space-around;
+   background-color: rgba(104, 92, 92, 0.095) !important;
+   border: 1px solid #ffffff9c;
+   transition-duration: 0.3s;
+}
+
+.task-card:hover{
+    box-shadow: 0 0 3px 3px #008066;
+    transform: scale(1.1);
+}
+
+.description-date-container{
+    flex: 1;
+    margin-left: 0.5rem;
+}
+
+.checkboxes{
+    margin-right: 0.2rem;
+
+}
+
+.checkboxes>input[type=checkbox]{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    margin-top: 0.6rem;
+}
+
+.description{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.task-date{
+    font-weight: bold;
+}
+
+.category{
+    /* width: 6.5em; */
+    padding: 0.9rem;
+    text-align: center;
+    border-radius: 5%;
+}
+
+
+/* adding responsiveness */
+@media screen and (max-width: 1050px){
+    #filter-task{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 900px){
+    #add-del-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px){
+    #task-list{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    #heading h1 {
+        font-size: 3rem;
+
+    }
+}
+@media screen and (max-width: 700px){
+    #filter-task{
+        flex-direction: column;
+        align-items: center;
+    }
+}
